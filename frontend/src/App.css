@@ -1,0 +1,121 @@
+/* Center the entire page */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for headings */
+h1, h2 {
+  color: #333;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+/* Form container */
+form {
+  display: flex;
+  flex-direction: column; /* Stack form fields vertically */
+  align-items: center;
+}
+
+/* Styling for form fields */
+input, select, button {
+  width: 300px;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input, select {
+  height: 50px;
+}
+
+/* Submit button style */
+button {
+  background-color: #2e302e;
+  color: white;
+  cursor: pointer;
+  width: min-content;
+}
+
+button:hover {
+  background-color: #2e302e;
+}
+
+/* Cancel button style */
+.submit-button {
+  background-color: #2e302e;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+/* Task list styling */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack task items vertically */
+  align-items: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+/* Styling for each task item */
+.task-item {
+  background-color: #f9f9f9;
+  border-width: 1px;
+  border-color: #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 70%; /* Adjust the width to make task items more narrow */
+  display: flex;
+  justify-content: space-between; /* Distribute content horizontally */
+  align-items: center;
+}
+
+/* Add a maximum width to prevent task items from getting too narrow */
+.task-item {
+  max-width: 800px; /* You can adjust this value to fit your preference */
+}
+
+.task-item div {
+  flex: 1; /* Make each part of the task take equal space */
+  text-align: center; /* Center text inside each section */
+}
+
+.task-item div:first-child {
+  text-align: left; /* Align the first part to the left */
+}
+
+/* Styling for edit and delete buttons */
+.edit-button, .delete-button {
+  background-color: #2e302e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: min-content; /* Set a fixed width */
+  padding: 8px; /* Reduce padding for narrow buttons */
+  font-size: 14px; /* Optional: Adjust font size to match the new button size */
+}
+
+.edit-button:hover, .delete-button:hover {
+  background-color: #2e302e;
+}
