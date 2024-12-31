@@ -31,7 +31,7 @@ cd backend
 ## Install dependencies
 npm install
 ## Start the server
-npm start
+node server.js
 ## Frontend:
 ## Open a new terminal and navigate to the frontend folder
 cd frontend
